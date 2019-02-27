@@ -42,6 +42,8 @@ namespace ConsoleApp
             {
                 Console.WriteLine(runTime + ", " + string.Join(", ", anagramsList));
             }
+
+            Console.Read();
         }
     }
 }
