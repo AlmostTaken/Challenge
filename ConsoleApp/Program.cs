@@ -11,12 +11,12 @@ namespace ConsoleApp
     {
         private static void Main()
         {
-            var watch = Stopwatch.StartNew();
             Console.Write("Enter dictionary path: ");
             var path = Console.ReadLine();
             Console.Write("Find anagrams: ");
             var anagramInput = Console.ReadLine()?.ToLower();
-            List<string> anagramsList = new List<string>();
+            var watch = Stopwatch.StartNew();
+            var anagramsList = new List<string>();
             if (anagramInput != null)
             {
                 var inputOrder = string.Concat(anagramInput.OrderBy(c => c));
